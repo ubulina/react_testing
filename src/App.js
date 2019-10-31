@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <input type="date" name="date" value={todo.date} onChange={inputChanged}/>
-      <input type="text" name="desc" value={todo.desc} onChange={inputChanged}/>
+      <input type="text" placeholder="Date" name="date" value={todo.date} onChange={inputChanged}/>
+      <input type="text" placeholder="Description" name="desc" value={todo.desc} onChange={inputChanged}/>
       <button onClick={addTodo}>Add</button>
       <TodoTable todos={todos} />
     </div>
