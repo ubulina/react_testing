@@ -3,7 +3,7 @@ import React from 'react';
 export default function TodoTable(props) {
   return (
     <div>
-      <table><tbody>
+      <table id="todotable"><tbody>
       {
         props.todos.map((todo, index) => 
           <tr key={index}>
