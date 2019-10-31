@@ -9,6 +9,7 @@ function App() {
   const addTodo = (event) => {
     event.preventDefault();
     setTodos([...todos, todo]);
+    setTodo({desc: '', date: ''});
   }
 
   const inputChanged = (event) => {
